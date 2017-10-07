@@ -68,6 +68,7 @@ public class SinglyLinkedList<I> {
         
         Node n9 = new Node<>("n9",null);
         Node<Integer> n10 = (Node<Integer>)n9;
+       // Node<Integer> n11 = (Node<Integer>)new Node<>("n11",null);
         System.out.println(n10.element);
         System.out.println(n10.element.getClass().getName());
         //foo(n2);

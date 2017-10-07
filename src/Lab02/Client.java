@@ -1,3 +1,5 @@
+package Lab02;
+
 
 import static java.lang.System.*;
 
