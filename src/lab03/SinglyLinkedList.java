@@ -41,22 +41,41 @@ public class SinglyLinkedList<I> {
             if (!(o instanceof Node)) {
                 return false;
             }
-            Node<P> newest = (Node<P>) o;
-//            System.out.println(newest.element.getClass().getName());
+            Node<P> newest = (Node<P>) o;//jvm doesnt care about P-type parameter in methods
+            System.out.println(newest.element.getClass().getName());
 //            System.out.println(newest.next.getClass().getName());
-            
+
             return this.element.equals(newest.element);
         }
 
     }
-    
+
     public static void main(String[] args) {
         Node<String> n1 = new Node<>("Hello", null);
-        Node<Integer> n2 = new Node<>(21, null);
+        Node<Integer> n3 = new Node<>(21, null);
+        Node n2 = new Node<Double>(21.5, null);
+        System.out.println(n2.element.getClass().getName());//ask aaron
+        //n1 = new Node<Object>(56,null);
+        Node<Integer> n4 = (Node<Integer>) n2;
+
+        System.out.println(n1.equals(n3));
+        Node n5 = new Node<>("String",null);
+        Node<Integer> n6 = (Node<Integer>)n5;
+        System.out.println(n6.equals(n5));
         
-        Node<String> n4 = (Node<String>) n2;
+//        Node<String> n7 = new Node<>("n7",null);
+//        Node<Integer> n8 = (Node<Integer>)n7;
         
-        System.out.println(n1.equals(n2));
+        Node n9 = new Node<>("n9",null);
+        Node<Integer> n10 = (Node<Integer>)n9;
+        System.out.println(n10.element);
+        System.out.println(n10.element.getClass().getName());
+        //foo(n2);
+    }
+    
+    public static void foo(Node<Integer> node)
+    {
+        System.out.println(node.getElement().intValue());
     }
 
     public int getSize() {
@@ -110,26 +129,26 @@ public class SinglyLinkedList<I> {
         }
         SinglyLinkedList c = (SinglyLinkedList) o;
         if (this.size == c.size) {
-            Node current = this.head, other = c.head;
-            
-            while (current!=null && other != null)
-            {
-                if(!(current.getElement().equals(other.getElement())))
-                   return false ;
-                current= current.getNext();
+            Node<I> current = this.head, other = c.head;
+
+            while (current != null && other != null) {
+                if (!(current.getElement().equals(other.getElement()))) {
+                    return false;
+                }
+                current = current.getNext();
                 other = other.getNext();
             }
-            if(current == null && other == null){
+            if (current == null && other == null) {
                 return true;
             }
         }
         return false;
     }
 
-    
-
     public I removeFirst() {
-        if (size==0) throw new IllegalStateException("List is empty");
+        if (size == 0) {
+            throw new IllegalStateException("List is empty");
+        }
         I item = head.getElement();
         head = head.getNext();
         size--;
@@ -138,7 +157,10 @@ public class SinglyLinkedList<I> {
         }
         return item;
     }
-/** removes element using the reference provided*/
+
+    /**
+     * removes element using the reference provided
+     */
     public boolean remove(I elm) {
         Node<I> previous = null, current = head;
         while (current != null) {
@@ -158,7 +180,10 @@ public class SinglyLinkedList<I> {
         }
         return false;
     }
-/** removes element using index provided*/
+
+    /**
+     * removes element using index provided
+     */
     public I remove(int num) {
         if (size == 0) {
             throw new IllegalStateException("List is empty or out of bounds");
@@ -184,7 +209,9 @@ public class SinglyLinkedList<I> {
     }
 
     public I removeLast() {
-        if (size==0){ throw new IllegalStateException("List is empty");}
+        if (size == 0) {
+            throw new IllegalStateException("List is empty");
+        }
         I item = null;
         Node<I> x, h = head;
         for (int i = 1; i < size - 1; i++) {
@@ -193,7 +220,7 @@ public class SinglyLinkedList<I> {
         x = h.getNext();
         item = x.getElement();
         h.setNext(null);
-        tail= h;
+        tail = h;
         size--;
         return item;
     }
