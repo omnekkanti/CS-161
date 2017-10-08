@@ -54,10 +54,12 @@ public class SinglyLinkedList<I> {
         Node<String> n1 = new Node<>("Hello", null);
         Node<Integer> n3 = new Node<>(21, null);
         Node n2 = new Node<Double>(21.5, null);
+        n2 = new Node<>(true, null);
         System.out.println(n2.element.getClass().getName());//ask aaron
         //n1 = new Node<Object>(56,null);
         Node<Integer> n4 = (Node<Integer>) n2;
-
+//        System.out.println(n4.element);
+//        System.out.println(n4.element.getClass().getName());
         System.out.println(n1.equals(n3));
         Node n5 = new Node<>("String",null);
         Node<Integer> n6 = (Node<Integer>)n5;
