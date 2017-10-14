@@ -17,13 +17,24 @@ import javax.swing.JOptionPane;
 public class Client {
 
     public static void main(String[] args) throws FileNotFoundException {
+        
+        
+        
+        
+        
         int integer = 2;
         double d = integer;
         double e = 2;
         String optionString = "Enter \"A\" to run Harmonic method \nEnter \"B\" to run Isabel's method\nEnter \"C\" to run find method";
-
+        boolean flag =false;
+        while (!flag){
+        
+        
         String message = JOptionPane.showInputDialog(null, optionString, "Selection of Recursive method", 0);
-
+        if(message.equalsIgnoreCase("a")||message.equalsIgnoreCase("b")||message.equalsIgnoreCase("c"))
+        {
+        flag = true;
+        } 
         switch (message) {
             case "a":
             case "A":
@@ -35,12 +46,17 @@ public class Client {
             case "b":
             case "B":
                 String input2 = JOptionPane.showInputDialog(null, "Enter File Path", "Isabel's Technique", 0);
+                boolean flag2=false;//can not declare local variables
+               while(!flag2){
                 File y2 = new File(input2);
                 try {
                     System.out.println(Recursion.isabelsTechnique(y2));
+                    flag2=true;
                 } catch (FileNotFoundException f) {
                     System.err.println("File does not exist, Enter the path again");
+                    input2 = JOptionPane.showInputDialog(null, "Enter File Path", "Isabel's Technique", 0);
                 }
+               }
                 break;
             case "c":
             case "C":
@@ -54,7 +70,8 @@ public class Client {
                 }
                 break;
             default:
-                System.out.println("Choose one of the 3 Recursion methods");
+                JOptionPane.showMessageDialog(null, "Choose one of the 3 Recursion methods");
+        }
         }
 
     }
