@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Lab03;
+package Lab05;
 
 /**
  *
@@ -41,7 +41,7 @@ public class SinglyLinkedList<I> {
             if (!(o instanceof Node)) {
                 return false;
             }
-            Node<P> newest = (Node<P>) o;//jvm doesnt care about P-type parameter in methods
+            Node<P> newest = (Node<P>) o;//jvm doesnt care about P-type parameter in methods as class definition is not maintained for each object
             System.out.println(newest.element.getClass().getName());
 //            System.out.println(newest.next.getClass().getName());
 
@@ -50,39 +50,43 @@ public class SinglyLinkedList<I> {
 
     }
 
-    public static void main(String[] args) {
-        Node<String> n1 = new Node<>("Hello", null);
-        Node<Integer> n3 = new Node<>(21, null);
-        Node n2 = new Node<Double>(21.5, null);
-        n2 = new Node<>(true, null);
-        System.out.println(n2.element.getClass().getName());//ask aaron
-        //n1 = new Node<Object>(56,null);
-        Node<Integer> n4 = (Node<Integer>) n2;
-//        System.out.println(n4.element);
-//        System.out.println(n4.element.getClass().getName());
-        System.out.println(n1.equals(n3));
-        Node n5 = new Node<>("String",null);
-        Node<Integer> n6 = (Node<Integer>)n5;
-        System.out.println(n6.equals(n5));
-        
-//        Node<String> n7 = new Node<>("n7",null);
-//        Node<Integer> n8 = (Node<Integer>)n7;
-        
-        Node n9 = new Node<>("n9",null);
-        Node<Integer> n10 = (Node<Integer>)n9;
-//       Node<Integer> n11 = (Node<Integer>)new Node<>("n11",null);
-        System.out.println(n10.element);
-        System.out.println(n10.element.getClass().getName());
-        //foo(n2);
-    }
+    /* public static void main(String[] args) {
+    Node<String> n1 = new Node<>("Hello", null);
+    Node<Integer> n3 = new Node<>(21, null);
+    Node n2 = new Node<Double>(21.5, null);
+    n2 = new Node<>(true, null);
+    System.out.println(n2.element.getClass().getName());//ask aaron
+    //n1 = new Node<Object>(56,null);
+    Node<Integer> n4 = (Node<Integer>) n2;
+    //        System.out.println(n4.element);
+    //        System.out.println(n4.element.getClass().getName());
+    System.out.println(n1.equals(n3));
+    Node n5 = new Node<>("String",null);
+    Node<Integer> n6 = (Node<Integer>)n5;
+    System.out.println(n6.equals(n5));
     
-    public static void foo(Node<Integer> node)
+    //        Node<String> n7 = new Node<>("n7",null);
+    //        Node<Integer> n8 = (Node<Integer>)n7;
+    
+    Node n9 = new Node<>("n9",null);
+    Node<Integer> n10 = (Node<Integer>)n9;
+    //       Node<Integer> n11 = (Node<Integer>)new Node<>("n11",null);
+    System.out.println(n10.element);
+    System.out.println(n10.element.getClass().getName());
+    //foo(n2);
+    }*/
+ /*public static void foo(Node<Integer> node)
     {
-        System.out.println(node.getElement().intValue());
-    }
-
+    System.out.println(node.getElement().intValue());
+    }*/
     public int getSize() {
         return size;
+    }
+/**
+ * returns the first element in linked list
+ */
+    public I getFirst() {
+        return head.getElement();
     }
 
     public boolean isEmpty() {

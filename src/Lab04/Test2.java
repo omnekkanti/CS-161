@@ -19,18 +19,25 @@ public class Test2 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner x = new Scanner(in);
-        int eno;
-        float sal;
-        boolean rumanager;
-        String name;
-        
-        System.out.println("Enter eno");
-        eno=x.nextInt();
+//        int eno;
+//        float sal;
+//        boolean rumanager;
+//        String name;
+//        
+//        System.out.println("Enter eno");
+//        eno=x.nextInt();
+////        System.out.println("read"+eno);
+//        eno=x.nextInt();
 //        System.out.println("read"+eno);
-        eno=x.nextInt();
-        System.out.println("read"+eno);
-        System.out.println("Enter Name");
-        name=x.nextLine();
+//        System.out.println("Enter Name");
+//        name=x.nextLine();
+//        System.out.println(name);
+
+        x.useDelimiter(",");
+        String thing = x.next();
+        String name = x.nextLine();
+        System.out.println(thing);
+        System.out.println(name);
         
         
     }
