@@ -36,12 +36,12 @@ public class StaticArrayQueue3<P> implements Queue<P>{
     @Override
     public P dequeue() {
         if(front == -1){//1
-            throw new IllegalStateException("Nothing to dequeue");//1
+            throw new IllegalStateException("Nothing to dequeue");//3
         }
         
         P ret = x[front];//2
         x[front]=null;//2
-        front=(front+1)%x.length;//3
+        front=(front+1)%x.length;//4
         
         if(front == nextInsertPos){//1
             front = -1;//1

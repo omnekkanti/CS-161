@@ -94,7 +94,7 @@ public class SinglyLinkedList<I> {
     }
 
     public void addFirst(I elm) {
-        head = new Node<I>(elm, head);//2
+        head = new Node<I>(elm, head);//3. a primitive operation is one which cant be broken down into further operations
         size++;//2
         if (size == 1) {//1
             tail = head;//1
@@ -154,7 +154,7 @@ public class SinglyLinkedList<I> {
 
     public I removeFirst() {
         if (size == 0) {//1
-            throw new IllegalStateException("List is empty");//1
+            throw new IllegalStateException("List is empty");//3
         }
         I item = head.getElement();//2
         head = head.getNext();//2

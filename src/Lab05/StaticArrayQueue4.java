@@ -29,7 +29,7 @@ public class StaticArrayQueue4<P> implements Queue<P>{
     public P dequeue() {
        P ret=x[front];//2
        x[front]=null;//2
-      front=(front+1)%x.length;//3
+      front=(front+1)%x.length;//4
       size--;//2
        return ret;//1
     }
