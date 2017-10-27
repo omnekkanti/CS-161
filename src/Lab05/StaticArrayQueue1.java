@@ -32,6 +32,14 @@ public class StaticArrayQueue1<P> implements Queue<P> {
         for(int s=0;s<i;s++){//n,n-1
             x[s]=x[s+1]; //4n   
         }
+        /*
+        int s=0; //1
+        while(s<3)//0,1,2,3(n+1)
+        {
+        x[s]=x[s+1];//4
+        S++;//0,1,2(n)
+        }
+        */
         return xi;//1
     }
 

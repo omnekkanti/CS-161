@@ -17,7 +17,7 @@ public class StaticArrayStack<E> implements Stack<E> {
  */
     public static final int capacity = 1000;//why do we need to do it..
     private E[] x;
-    int i;
+    int i;//index for the next insert
 
     public StaticArrayStack() {
         x = (E[]) new Object[capacity];

@@ -94,10 +94,10 @@ public class SinglyLinkedList<I> {
     }
 
     public void addFirst(I elm) {
-        head = new Node<I>(elm, head);
-        size++;
-        if (size == 1) {
-            tail = head;
+        head = new Node<I>(elm, head);//2
+        size++;//2
+        if (size == 1) {//1
+            tail = head;//1
         }
     }
 
@@ -153,16 +153,16 @@ public class SinglyLinkedList<I> {
     }
 
     public I removeFirst() {
-        if (size == 0) {
-            throw new IllegalStateException("List is empty");
+        if (size == 0) {//1
+            throw new IllegalStateException("List is empty");//1
         }
-        I item = head.getElement();
-        head = head.getNext();
-        size--;
-        if (size == 0) {
-            tail = head;
+        I item = head.getElement();//2
+        head = head.getNext();//2
+        size--;//2
+        if (size == 0) {//1
+            tail = head;//1
         }
-        return item;
+        return item;//1
     }
 
     /**
