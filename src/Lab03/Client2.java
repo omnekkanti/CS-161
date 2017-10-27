@@ -11,11 +11,11 @@ import java.util.Scanner;
  *
  * @author Om
  */
-public class Client {
+public class Client2 {
 
     public static void main(String[] args) {
 //        LinkedBag<String> N  = new LinkedBag<>(); 
-//     System.out.println(N.count);
+//        System.out.println(N.count);
 //        String x = null;
 //        System.out.println(x instanceof String);
        /* ArrayBag<Player> footballTeam = new ArrayBag<>(2);
