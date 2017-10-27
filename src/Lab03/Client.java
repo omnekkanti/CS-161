@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Om
  */
-public class Client2 {
+public class Client {
 
     public static void main(String[] args) {
 //        LinkedBag<String> N  = new LinkedBag<>(); 
