@@ -43,7 +43,7 @@ public class Client {
 //        System.out.println(
 //                "s = "
 //                + Arrays.toString(s));
-    /*    System.out.println("Storing Integers into Static Queue DataStructure");
+        /*    System.out.println("Storing Integers into Static Queue DataStructure");
 
         System.out.println("Start of Queueing: ");
         StaticArrayQueue4<Integer> q1 = new StaticArrayQueue4<>(1000000);
@@ -111,43 +111,47 @@ public class Client {
         System.out.println("End of Popping into the queue: ");
         long time1 = (t8 - t7) + (t10 - t9) + (t12 - t11);
         System.out.println("Run-Time for Dynamic Classes: " + time1);*/
+        try {
 
-        for (int N = 1000000; N < Integer.MAX_VALUE; N *= 10) {
-            System.out.println("\nStoring Integers into Dynamic Queue DataStructure");
+            for (int N = 1000000; N < Integer.MAX_VALUE; N *= 10) {
+                System.out.println("\nStoring Integers into Dynamic Queue DataStructure");
 
-            System.out.println("Start of Queueing: ");
-            LinkedListQueue<Integer> dq2 = new LinkedListQueue<>();
-            long t13 = System.currentTimeMillis();
-            for (int i = 1; i <= N; i++) {
-                dq2.enqueue(i);
+                System.out.println("Start of Queueing: ");
+                LinkedListQueue<Integer> dq2 = new LinkedListQueue<>();
+                long t13 = System.currentTimeMillis();
+                for (int i = 1; i <= N; i++) {
+                    dq2.enqueue(i);
+                }
+                long t14 = System.currentTimeMillis();
+                System.out.println("End of Queueing: ");
+
+                System.out.println("Storing Integers into Dynamic StacK DataStructure from Dynamic Queue");
+
+                System.out.println("Start of Dequeing: ");
+                LinkedListStack<Integer> ds2 = new LinkedListStack<>();
+                long t15 = System.currentTimeMillis();
+                for (int i = 1; i <= N; i++) {
+                    ds2.push(dq2.dequeue());
+                }
+                long t16 = System.currentTimeMillis();
+                System.out.println("End of Dequeing onto the stack: ");
+
+                System.out.println("Popping Integers from Dynamic StacK DataStructure into Dynamic Queue");
+
+                System.out.println("Start of Popping: ");
+                long t17 = System.currentTimeMillis();
+                for (int i = 1; i <= N; i++) {
+                    dq2.enqueue(ds2.pop());
+                }
+                long t18 = System.currentTimeMillis();
+                System.out.println("End of Popping into the queue: ");
+                long time2 = (t14 - t13) + (t16 - t15) + (t18 - t17);
+                System.out.println("Run-Time for Dynamic Classes: " + time2);
             }
-            long t14 = System.currentTimeMillis();
-            System.out.println("End of Queueing: ");
-
-            System.out.println("Storing Integers into Dynamic StacK DataStructure from Dynamic Queue");
-
-            System.out.println("Start of Dequeing: ");
-            LinkedListStack<Integer> ds2 = new LinkedListStack<>();
-            long t15 = System.currentTimeMillis();
-            for (int i = 1; i <= N; i++) {
-                ds2.push(dq2.dequeue());
-            }
-            long t16 = System.currentTimeMillis();
-            System.out.println("End of Dequeing onto the stack: ");
-
-            System.out.println("Popping Integers from Dynamic StacK DataStructure into Dynamic Queue");
-
-            System.out.println("Start of Popping: ");
-            long t17 = System.currentTimeMillis();
-            for (int i = 1; i <= N; i++) {
-                dq2.enqueue(ds2.pop());
-            }
-            long t18 = System.currentTimeMillis();
-            System.out.println("End of Popping into the queue: ");
-            long time2 = (t14 - t13) + (t16 - t15) + (t18 - t17);
-            System.out.println("Run-Time for Dynamic Classes: " + time2);
         }
-
+        catch(OutOfMemoryError e){
+            e.printStackTrace();
+        }
     }
 
 }

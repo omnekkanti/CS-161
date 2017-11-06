@@ -28,6 +28,7 @@ public class StaticArrayQueue2<P> implements Queue<P>{
 
     @Override
     public P dequeue() {
+        if(size()==0) {throw new IllegalStateException("Queue is empty");}
        P ret = x[front];
        x[front]=null;
        front++;

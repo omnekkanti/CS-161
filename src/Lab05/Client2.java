@@ -15,8 +15,10 @@ public class Client2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         
-        for (int N = 1000000; N < Integer.MAX_VALUE; N *= 10) {
+        
+        try {
+            
+        for (int N = 1000000; N < Integer.MAX_VALUE; N *= 10) { 
         System.out.println("Storing Integers into Static Queue DataStructure");
 
         System.out.println("Start of Queueing: ");
@@ -50,6 +52,10 @@ public class Client2 {
         System.out.println("End of Popping into the queue: ");
         long time = (t2 - t1) + (t4 - t3) + (t6 - t5);
         System.out.println("Run-Time for static classes: " + time);
-    }
+        }
+       }
+        catch(OutOfMemoryError e){
+            e.printStackTrace();
+        }
     }
 }
