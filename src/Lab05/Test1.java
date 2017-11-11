@@ -57,10 +57,14 @@ public class Test1 {
 //        System.out.printf("%2$s Mr.%1$s%n", "test", "hello");
 //        System.out.printf("%2$d + %1$d = %d%d%d", 1 ,2,3);
 
-//        Two.pi.m1();
+//       Two x=(Two) new Two();
+//       x.//ststic field supposed to be visible?
+//      Two.pi.m1();
+int[] om = {1,2,3};
+        System.out.println(om.length);
         
-        One x = new One();
-        System.out.printf("%s",x);
+//        One x = new One();
+//        System.out.printf("%s",x);
 //        for(float i = 1;i<=200;i++){
 //            System.out.println("Division of "+i+" with 2 "+"leaves us with remainder "+i%2);
 //        }

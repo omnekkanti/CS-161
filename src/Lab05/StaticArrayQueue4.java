@@ -20,6 +20,8 @@ public class StaticArrayQueue4<P> implements Queue<P>{
     
     @Override
     public void enqueue(P elm) {
+        if(size==x.length) 
+            throw new IllegalStateException("No more room");
         int insertPosition = (front+size)%x.length;
         x[insertPosition]=elm;
         size++;
@@ -27,6 +29,8 @@ public class StaticArrayQueue4<P> implements Queue<P>{
 
     @Override
     public P dequeue() {
+        if(size==0) 
+            return null;
        P ret=x[front];//2
        x[front]=null;//2
       front=(front+1)%x.length;//4
