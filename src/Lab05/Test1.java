@@ -35,7 +35,7 @@ class One {
 
 class Two {
 
-    static One pi;
+    static One pi=new One();
 
     Two() {
         pi = new One();
@@ -59,8 +59,9 @@ public class Test1 {
 
 //       Two x=(Two) new Two();
 //       x.//ststic field supposed to be visible?
-//      Two.pi.m1();
-int[] om = {1,2,3};
+//new Two();
+        Two.pi.m1();
+        int[] om = {1,2,3};
         System.out.println(om.length);
         
 //        One x = new One();

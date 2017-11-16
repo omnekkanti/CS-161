@@ -201,6 +201,7 @@ public class SinglyLinkedList<I> {
                     previous.setNext(current.getNext());
                     current.setNext(null);
                 }
+                
                 size--;
                 return current.getElement();
             }

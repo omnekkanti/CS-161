@@ -16,6 +16,7 @@ public class StaticArrayQueue1<P> implements Queue<P> {
 
     public StaticArrayQueue1(int capacity) {
         x = (P[])new Object[capacity];
+        
     }
 
     @Override

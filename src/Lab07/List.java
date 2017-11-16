@@ -3,17 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Lab06;
+package Lab07;
 
 /**
  *
  * @author omprakashnekkanti
  */
-public class Test1 {
-    int count;
-    int start=-1;
+public interface List {
     
-    public Test1(){
-        start=-2;// object creation will assign defaults to the datatypes and then it gets changed according to the constructor
-    }
 }

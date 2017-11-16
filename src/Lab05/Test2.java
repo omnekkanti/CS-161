@@ -30,13 +30,31 @@ public class Test2 {
 //        System.out.printf("%s,%s",x,time2);
            
 //System.out.printf("%,d",Integer.MAX_VALUE);
-int n = (int)10000000000;
-for(int i=n;i<Integer.MAX_VALUE;i=i*10){
-    System.out.printf("%,d",i);   
-}
+//int x = 07433279;
+//int n = (int)2147483648l;
+        //System.out.println(n);
+        int n = 1;
+        switch(n){
+            case 0:
+                int t = 100;
+                System.out.println(t);
+                break;
+            case 1:
+                System.out.println(t); //t not initilaized
+                t = 200;
+                System.out.println(t);
+                break;
+            case 2:
+                
+                break;
+        }
+//for(int i=n;i<Integer.MAX_VALUE;i=i*10){
+//    System.out.printf("%,d",i);   
+//}
 byte b =(byte)128;
         System.out.println(b);
 
     }
     
+
 }

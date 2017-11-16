@@ -20,9 +20,12 @@ public class FinalClient {
 //        System.out.printf("|%s|%1$s%n", test, "hello");
 
         System.out.printf("%15s     %10s    %10s%n", "N", "Array", "LinkedList");
-
-        for (int N = 1000000; N < Integer.MAX_VALUE; N *= 10) {
-            String time1 = null, time2 = null;
+        boolean staticContinue = true;
+        boolean dynamicContinue = true;
+        String time1 = null, time2 = null;
+        
+        for (int N = 1000000; N > 0 && N < Integer.MAX_VALUE && (staticContinue || dynamicContinue); N *= 10) {
+            
             try {
                 LinkedListQueue<Integer> dq2 = new LinkedListQueue<>();
                 long t13 = System.currentTimeMillis();
@@ -48,37 +51,48 @@ public class FinalClient {
                 time1 = String.valueOf(ti1);
             } catch (OutOfMemoryError ex1) {
                 time1 = "Out of Memory";
+                dynamicContinue = false;
             }
 
             try {
-
-                StaticArrayQueue4<Integer> q1 = new StaticArrayQueue4<>(N);
-                long t1 = System.currentTimeMillis();
-                for (int i = 1; i <= N; i++) {
-                    q1.enqueue(i);
+                if(!staticContinue){
+                    System.out.println(time2);
                 }
-                long t2 = System.currentTimeMillis();
+                else{
+                    StaticArrayQueue4<Integer> q1 = new StaticArrayQueue4<>(N);
+                    long t1 = System.currentTimeMillis();
+                    for (int i = 1; i <= N; i++) {
+                        q1.enqueue(i);
+                    }
+                    long t2 = System.currentTimeMillis();
 
-                StaticArrayStack<Integer> s1 = new StaticArrayStack(N);
-                long t3 = System.currentTimeMillis();
-                for (int i = 1; i <= N; i++) {
-                    s1.push(q1.dequeue());
+                    StaticArrayStack<Integer> s1 = new StaticArrayStack(N);
+                    long t3 = System.currentTimeMillis();
+                    for (int i = 1; i <= N; i++) {
+                        s1.push(q1.dequeue());
+                    }
+                    long t4 = System.currentTimeMillis();
+
+                    long t5 = System.currentTimeMillis();
+                    for (int i = 1; i <= N; i++) {
+                        q1.enqueue(s1.pop());
+                    }
+                    long t6 = System.currentTimeMillis();
+
+                    long ti2 = (t2 - t1) + (t4 - t3) + (t6 - t5);
+
+                    if(ti2 > 8492034893204892304){
+                        time2 = "Out of time";
+                        staticContinue = false;
+                    }
+                    else{
+                        time2 = String.valueOf(ti2);
+                    }
                 }
-                long t4 = System.currentTimeMillis();
-
-                long t5 = System.currentTimeMillis();
-                for (int i = 1; i <= N; i++) {
-                    q1.enqueue(s1.pop());
-                }
-                long t6 = System.currentTimeMillis();
-
-                long ti2 = (t2 - t1) + (t4 - t3) + (t6 - t5);
-                time2 = String.valueOf(ti2);
-
                 //System.out.printf("%,10d      " + "\t" + time + "\t" + time2 + "%n", N);
             } catch (OutOfMemoryError e) {
                 time2 = "Out of Memory";
-
+                staticContinue = false;
             }
             System.out.printf("%,15d    %10s    %10s%n", N, time2, time1);//right boundary of format specifier moves to right if there is no space to left
         }
