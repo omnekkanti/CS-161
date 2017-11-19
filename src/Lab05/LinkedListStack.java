@@ -13,27 +13,27 @@ public class LinkedListStack<E> implements Stack<E> {
 
     private SinglyLinkedList<E> stack = new SinglyLinkedList<>();
     
-    @Override
+    
     public void push(E e) {
         stack.addFirst(e);
     }
 
-    @Override
+    
     public E pop() {
        return stack.removeFirst();
     }
 
-    @Override
+    
     public E top() {
         return stack.getFirst();//does it return a copy of address stored up in variable
     }
 
-    @Override
+    
     public int size() {
         return stack.getSize();//does it return a copy of value in variable
     }
 
-    @Override
+    
     public boolean isEmpty() {
         return stack.isEmpty();
     }

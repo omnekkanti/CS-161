@@ -60,9 +60,20 @@ public class Test1 {
 //       Two x=(Two) new Two();
 //       x.//ststic field supposed to be visible?
 //new Two();
-        Two.pi.m1();
-        int[] om = {1,2,3};
-        System.out.println(om.length);
+//        Two.pi.m1();
+//        int[] om = {1,2,3};
+//        System.out.println(om.length);
+
+
+/*for(int i=1000000;i>0 && i<1000000001;i*=10){
+System.out.println(i);
+}*/
+/*for(int i=1000000;i>0 && i<Integer.MAX_VALUE;i*=10){
+System.out.println(i);
+            }*/
+for(int i=1000000;i<Integer.MAX_VALUE;i*=10){
+                System.out.println(i);
+            }
         
 //        One x = new One();
 //        System.out.printf("%s",x);

@@ -9,6 +9,11 @@ package Lab07;
  *
  * @author omprakashnekkanti
  */
-public interface List {
-    
+public interface List<P> {
+    public int getSize();
+    public boolean isEmpty();
+    public P get(int i) throws IndexOutOfBoundsException;
+    public P set(int i, P e)throws IndexOutOfBoundsException;
+    public void add(int i,P e) throws IndexOutOfBoundsException;//having braces {} means methods has an empty body
+    public P remove(int i) throws IndexOutOfBoundsException;
 }
