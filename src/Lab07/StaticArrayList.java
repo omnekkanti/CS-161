@@ -56,7 +56,8 @@ public class StaticArrayList<P> implements List<P> {
         if (count == x.length) 
         throw new IllegalStateException("No more room");
         
-        for (int p = count; p > i; p--) {
+        for (int p = count; p > i; p--) 
+        {
         x[p] = x[p - 1];
         }
         B1:
