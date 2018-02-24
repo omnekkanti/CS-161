@@ -90,7 +90,7 @@ int count, front;
         for (int p = tempIndex; p < (front+count- 1)%x.length; p=(x.length+p+1)%x.length) {
             x[p] = x[(x.length+p+1)%x.length];
         }
-        x[count-1] = null;
+        x[(front+count-1)%x.length] = null;
         count--;
         return temp;
     }

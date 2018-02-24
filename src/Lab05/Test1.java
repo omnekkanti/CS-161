@@ -35,10 +35,14 @@ class One {
 
 class Two {
 
-    static One pi=new One();
+    static One pit=m1();//=new One(); has to be a static method to intialize if the method is from same class
 
     Two() {
-        pi = new One();
+        pit = new One();
+    }
+    
+    private static One m1(){
+            return new One();
     }
 }
 
@@ -57,10 +61,10 @@ public class Test1 {
 //        System.out.printf("%2$s Mr.%1$s%n", "test", "hello");
 //        System.out.printf("%2$d + %1$d = %d%d%d", 1 ,2,3);
 
-//       Two x=(Two) new Two();
-//       x.//ststic field supposed to be visible?
-//new Two();
-//        Two.pi.m1();
+//       Two x= new Two();
+//       System.out.println(x.pit);//is static field supposed to be visible?
+
+        Two.pit.m1();
 //        int[] om = {1,2,3};
 //        System.out.println(om.length);
 
@@ -71,9 +75,9 @@ System.out.println(i);
 /*for(int i=1000000;i>0 && i<Integer.MAX_VALUE;i*=10){
 System.out.println(i);
             }*/
-for(int i=1000000;i<Integer.MAX_VALUE;i*=10){
-                System.out.println(i);
-            }
+//for(int i=1000000;i<Integer.MAX_VALUE;i*=10){
+//                System.out.println(i);
+//            }
         
 //        One x = new One();
 //        System.out.printf("%s",x);

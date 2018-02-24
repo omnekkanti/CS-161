@@ -27,9 +27,10 @@ public class Test {
 //            System.out.println(cx[i]);
 //        }
 
-    //String source = "1    2 3\t4\n5 6 7\n\n\n8      ";
-    String source = "1,2,3,4\n5,6,7,8";
-    String delimiter = "(\\s|,)+"; //[\r\f\v\n\t ]+
+    String source = " 1    2 3\t4\n5 6 7\n\n\n8           ";
+    
+//    String source = "1,2,3,4\n5,6,7,8";
+    String delimiter = "(\\s|,)+"; //[\r\f\v\n\t ]+ or ,+
         for(String token : source.split(delimiter)){
             System.out.print("'" + token + "'");
             try{

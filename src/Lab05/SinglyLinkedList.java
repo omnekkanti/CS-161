@@ -17,7 +17,7 @@ public class SinglyLinkedList<I> {
 
     private static class Node<P> {
 
-        private P element;
+        private P element;//available in the singlylinkedlist class directly even though private
         private Node<P> next;
 
         public Node(P el, Node<P> next) {

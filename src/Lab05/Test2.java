@@ -15,6 +15,7 @@ public class Test2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Node<String> x = new Node<>("v");
         String test = String.format("%-10.3f", 3.1415926);
         System.out.printf("|%2$s|%1$s%n", test, "hello");
         System.out.printf("|%2$s|%s%n", test, "hello");

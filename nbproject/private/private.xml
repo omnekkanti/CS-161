@@ -3,34 +3,59 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab03/SinglyLinkedList.java</file>
-            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab06/LeakyStack.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab07/StaticArrayList.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Test1/TestB.java</file>
             <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/StaticArrayQueue3.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab04/Test3.java</file>
             <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab06/DoubleStack.java</file>
             <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab04/Test.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab07/StaticArrayListBigO1ForInsertAt0Index.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/StaticRun.png</file>
             <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/FinalClient.java</file>
-            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/LinkedListQueue.java</file>
-            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/LinkedListStack.java</file>
-            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab06/StaticDoubleStackSingleArray2.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Test1/TestC.java</file>
             <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/StaticArrayQueue2.java</file>
-            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab03/LinkedBag.java</file>
-            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/SinglyLinkedList.java</file>
             <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/Test1.java</file>
-            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab04/Test2.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/build.xml</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab07/List.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab07/DoublyLinkedListImplementation.java</file>
             <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/StaticArrayQueue4.java</file>
-            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab06/StaticDoubleStackSingleArray.java</file>
             <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab03/ArrayBag.java</file>
             <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/Client2.java</file>
             <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/Client.java</file>
             <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab06/Client.java</file>
             <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/StaticArrayStack.java</file>
             <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/StaticArrayQueue1.java</file>
-            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab02/Bag.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab07/DoublyLinkedList.java</file>
             <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab06/Test1.java</file>
-            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab06/StaticLeakyStack.java</file>
-            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/Test2.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Test1/OmTestScanner.java</file>
             <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/Stack.java</file>
             <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab06/Test1Main.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab04/Recursion.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Test1/TestE.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab03/SinglyLinkedList.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Test1/Streams.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab06/LeakyStack.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab07/Test1.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab04/Client.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Test1/Generic.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab07/Client1.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/LinkedListQueue.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/LinkedListStack.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab06/StaticDoubleStackSingleArray2.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab03/LinkedBag.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab02/Client.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/SinglyLinkedList.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Test1/ScannerAaron.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab04/Test2.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/nbproject/build-impl.xml</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab06/StaticDoubleStackSingleArray.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab02/Bag.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/Queue.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab06/StaticLeakyStack.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Test1/Aclass.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab05/Test2.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Test1/TestA.java</file>
+            <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Test1/TestD.java</file>
             <file>file:/Users/omprakashnekkanti/Desktop/Fall2017-CS161/Java-161/Homeworks/H-2/JavaLibrary1/JavaLibrary1/src/Lab02/Scores.java</file>
         </group>
     </open-files>

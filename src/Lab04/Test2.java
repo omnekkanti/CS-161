@@ -11,33 +11,42 @@ import static java.lang.System.*;
  *
  * @author omprakashnekkanti
  */
-public class Test2 {
+
+class X {
+char fido;
+}
+class Test2 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner x = new Scanner(in);
-//        int eno;
-//        float sal;
-//        boolean rumanager;
-//        String name;
-//        
-//        System.out.println("Enter eno");
-//        eno=x.nextInt();
-////        System.out.println("read"+eno);
-//        eno=x.nextInt();
+        X fido = new X();
+	System.out.print(fido.fido);
+	Scanner x = new Scanner(in);
+        int eno;
+        float sal;
+        boolean rumanager;
+        String name;
+        
+        System.out.println("Enter eno");
+        eno=x.nextInt();
 //        System.out.println("read"+eno);
-//        System.out.println("Enter Name");
-//        name=x.nextLine();
-//        System.out.println(name);
+//        eno=x.nextInt();
+        System.out.println("read employee number: "+ eno);
+        System.out.println("Enter Salary");
+        sal = x.nextFloat();
+        System.out.println("read Salary: "+ sal);
+        System.out.println("Enter Name");
+        name=x.nextLine();
+        System.out.println("Read Name: "+name);
 
-        x.useDelimiter(",");
-        String thing = x.next();
-        String name = x.nextLine();
-        System.out.println(thing);
-        System.out.println(name);
+//        x.useDelimiter(",");
+//        String thing = x.next();
+//        String name = x.nextLine();
+//        System.out.println(thing);
+//        System.out.println(name);
         
         
     }
