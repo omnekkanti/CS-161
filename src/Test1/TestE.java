@@ -6,6 +6,8 @@
 package Test1;
 
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -27,7 +29,25 @@ public class TestE {
 //        String input = "1 fish 2 fish red fish blue fish";
 //        Scanner s = new Scanner(input);
 //        System.out.println(s.findInLine("(\\d+) fish (\\d+) fish (\\w+) fish (\\w+)"));
-        System.out.printf("\"\" matches as a delimiter. No need to advance the cursor.%n");
+//        System.out.printf("\"\" matches as a delimiter. No need to advance the cursor.%n");
+//        String source = "aeiou";
+//        String s1="qw";
+//        System.out.println(s1.length());
+//        System.out.print(s1.substring(1,2));//substring on string length returns empty string
+//        String pt = "\\s+";
+//        Pattern io = Pattern.compile(pt);
+//        Matcher x = io.matcher("   h");
+//        System.out.println(x.matches());
+//        Pattern pat =Pattern.compile("\\s+");
+//        String forpat = "qwo m";
+//        Matcher bv = pat.matcher(forpat);
+//        boolean bs = bv.find();
+//        System.out.println(bs);
+//        System.out.println(bv.end());
+          String delimiter= "\\s+|\\r?\\n";
+          Pattern x = Pattern.compile(delimiter);
+          System.out.println(x);
     }
+    
     
 }

@@ -35,12 +35,17 @@ public class Test3 {
 //        boolean b = m.matches();
 //        boolean b2 = m2.find();
         
-        String yu = " , , ,  ";
+        String yu = " , , ,  ";// trailing empty stringS-plural are not loaded into array
         String yu1 = "   ";
+        String yu2 = ",,,";
          
-        for(String st:yu1.split("")){
-            System.out.println("String token:"+"'"+st+"'"+ "is this string empty: "+st.isEmpty());
+        for(String st:yu.split(" ")){
+        System.out.println("String token:"+"'"+st+"'"+ "is this string empty: "+st.isEmpty());
         }
+        
+        /*for(String st:yu2.split("")){
+        System.out.println("String token:"+"'"+st+"'"+ "is this string empty: "+st.isEmpty());
+        }*/
         
         Pattern bi = Pattern.compile(" ");
         bi.matcher(yu).matches();
