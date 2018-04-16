@@ -18,7 +18,7 @@ public class TestD {
         // TODO code application logic here
           Aclass x = new Aclass();
           System.out.println(x.getId());
-          System.out.println(x.getName());//wont work properly if you use void infront of constructor
+          System.out.println(x.getName());//wont work properly if you use void infront of constructor. it intialzes instance variables to defaults.
     }
     
 }

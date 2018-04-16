@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
  *
  * @author aaron
  */
-public class ScannerAaron {
+public class OwnScanner {
 
     public static boolean VERBOSE = true;
 
@@ -23,7 +23,7 @@ public class ScannerAaron {
 
     private int cursorPosition;
 
-    public ScannerAaron(String source) {
+    public OwnScanner(String source) {
         this.source = source;
     }
 
@@ -228,11 +228,11 @@ public class ScannerAaron {
     }
 
     public static void main(String[] args) {
-        String s = "My name is Aaron\nI am 22 years old.\r\n\r\nThis is 49.75 % fun.";
+        String s = "My name is om\nI am 29 years old.\r\n\r\nThis is 99.75 % fun.";
         
-        ScannerAaron.VERBOSE = false;
+        OwnScanner.VERBOSE = false;
         
-        ScannerAaron myScanner = new ScannerAaron(s);
+        OwnScanner myScanner = new OwnScanner(s);
         
 //        System.out.printf("String: %n'%s'%n%n===============:=======%n", s);
         
